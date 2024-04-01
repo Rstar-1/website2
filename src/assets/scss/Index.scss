@@ -1,7 +1,7 @@
 /* ======================= Start-Color ======================= */
-$primary: #000f32 !important;
+$primary: #067069 !important;
 $secondary: #001648 !important;
-$tertiary: #8f97ab !important;
+$tertiary: #414b5f !important;
 $forth: #121018 !important;
 $success: #4bb543 !important;
 $warning: #ff5722 !important;
@@ -197,9 +197,9 @@ $gray: gray !important;
   font-display: swap;
 }
 @font-face {
-  font-family: "roboto-regular";
-  src: local("roboto-regular"),
-    url("../fonts/Roboto-Regular.ttf") format("opentype");
+  font-family: "poppins-regular";
+  src: local("poppins-regular"),
+    url("../fonts/Poppins-Regular.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -207,12 +207,11 @@ $gray: gray !important;
 p,
 input,
 textarea,
-button,
-a {
-  font-family: "roboto-regular" !important;
+button {
+  font-family: "poppins-regular" !important;
 }
 body {
-  font-family: "roboto-regular" !important;
+  font-family: "poppins-regular" !important;
 }
 h1,
 h2,
@@ -221,7 +220,8 @@ h4,
 h5,
 h6,
 span,
-li {
+li,
+a {
   font-family: "poppins-semibold" !important;
 }
 p {
@@ -240,11 +240,7 @@ input,
 
 /* ======================= Start-scrollbar ======================= */
 ::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background: $secondary;
-  border-radius: 10px;
+  width: 0px;
 }
 /* ======================= End-scrollbar ======================= */
 
@@ -582,14 +578,13 @@ tr:nth-child(even):hover {
 }
 .activetext {
   color: $tertiary;
-  font-weight: 500 !important;
 }
 .navbar .active {
-  color: $white;
+  color: $primary;
 }
 .nav-logo {
   width: 100% !important;
-  height: 80px !important;
+  height: 60px !important;
   @media (min-width: 641px) and (max-width: 768px) {
     height: 50px !important;
   }
@@ -613,71 +608,20 @@ tr:nth-child(even):hover {
     height: 280px !important;
   }
 }
-.banner2-img {
-  width: 100% !important;
-  height: 550px !important;
-  @media (min-width: 641px) and (max-width: 768px) {
-    height: 300px !important;
-  }
-  @media (max-width: 640px) {
-    height: 280px !important;
-  }
-}
-.info-hei {
-  width: 100% !important;
-  height: 350px !important;
-  display: flex !important;
-  align-items: center !important;
-}
-.info-hei:hover {
-  border-bottom: 5px solid $primary;
-}
-.info-img {
-  width: 80px !important;
-  height: 80px !important;
-  @media (max-width: 640px) {
-    width: 60px !important;
-    height: 60px !important;
-  }
-}
-.info-hr {
-  border: none !important;
-  height: 5px !important;
-  background: $gray;
-  width: 20% !important;
-  border-radius: 10px !important;
-}
 .abcom-img {
   height: 480px !important;
   @media (max-width: 640px) {
     height: 250px !important;
   }
 }
-.abcom-hr {
-  border: none !important;
-  height: 5px !important;
-  background: $gray;
-  width: 20% !important;
-  border-radius: 10px !important;
-}
-.bordh {
-  border-top: 1px solid #ececec;
-}
-.bordall {
-  border-left: 1px dashed #999;
-  border-right: 1px dashed #999;
-}
-.abcom-side-img {
-  width: 80px !important;
-  height: 80px !important;
-    @media (min-width: 641px) and (max-width: 768px) {
-     width: 50px !important;
-    height: 50px !important;
-  }
+.service-h {
+  height: 300px !important;
   @media (max-width: 640px) {
-    width: 30px !important;
-    height: 30px !important;
+    height: 250px !important;
   }
+}
+.service-h:hover {
+  border-top: 9px solid #067069 !important;
 }
 .patch-img {
   width: 100% !important;
@@ -688,13 +632,6 @@ tr:nth-child(even):hover {
   @media (max-width: 640px) {
     height: 280px !important;
   }
-}
-.ouservice-hr {
-  border: none !important;
-  height: 5px !important;
-  background: $gray;
-  width: 10% !important;
-  border-radius: 10px !important;
 }
 .ouservice-img {
   width: 100% !important;
@@ -723,7 +660,7 @@ tr:nth-child(even):hover {
 .count-img {
   width: 100% !important;
   height: 550px !important;
-   @media (min-width: 641px) and (max-width: 768px) {
+  @media (min-width: 641px) and (max-width: 768px) {
     height: 320px !important;
   }
   @media (max-width: 640px) {
@@ -908,7 +845,7 @@ tr:nth-child(even):hover {
 .serv-logo {
   width: 100% !important;
   height: 80px !important;
-   @media (min-width: 641px) and (max-width: 768px) {
+  @media (min-width: 641px) and (max-width: 768px) {
     height: 60px !important;
   }
   @media (max-width: 640px) {
@@ -933,20 +870,19 @@ tr:nth-child(even):hover {
 /* ======================= Start-Footer ======================= */
 .footerimg {
   width: 100% !important;
-  height: 80px !important;
+  height: 170px !important;
 }
 .social-foot {
   width: 40px !important;
   height: 40px !important;
   border-radius: 50% !important;
 }
-.textfoot {
-  color: #a4a0a0 !important;
-}
-.textfoot:hover {
-  color: #ececec !important;
-}
-.bgtransparent {
-  background: transparent !important;
+.foot-hr {
+  width: 20% !important;
+  border: none;
+  height: 5px !important;
+  background: #fff !important;
+  margin-left: 0px !important;
+  margin-right: auto !important;
 }
 /* ======================= End-Footer ======================= */

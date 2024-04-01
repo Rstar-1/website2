@@ -1,137 +1,45 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay } from "swiper";
-import "swiper/css";
-import "swiper/swiper.min.css";
 
 const Banner = () => {
-  SwiperCore.use([Autoplay]);
   return (
-    <Swiper
-      grabCursor={true}
-      className="mySwiper"
-      autoplay={{
-        delay: 1000,
-        disableOnInteraction: false,
-      }}
-      breakpoints={{
-        1536: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        1280: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        1024: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        991: {
-          slidesPerView: 1,
-          spaceBetween: 30,
-        },
-        768: {
-          slidesPerView: 1,
-          spaceBetween: 30,
-        },
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 30,
-        },
-        425: {
-          slidesPerView: 1,
-          spaceBetween: 30,
-        },
-        325: {
-          slidesPerView: 1,
-          spaceBetween: 30,
-        },
-      }}
-    >
-      <SwiperSlide>
-        <div className="relative banner-img">
-          <img
-            src="https://html.creativegigstf.com/charles/images/home/slide-1.jpg?1709375557004"
-            alt="banner"
-            className="w-full banner-img object-cover"
-          />
-          <div className="absolute top-0 text-left left-0 flex items-center justify-start banner-img">
-            <div className="w-full container mx-auto">
-              <div className="w-50 md-w-70 sm-w-90">
-                <p className="textdark font-400 sm-text-justify mbpx1 fsize23 md-fsize20 sm-fsize15">
-                  The government of fortune
-                </p>
-                <h3 className="textprimary font-800 sm-font-400 mtpx9 sm-mtpx6 leading mbpx1 fsize55 md-fsize30 sm-fsize20">
-                  WE IMPROVE YOUR SALES EFFICIENCY
-                </h3>
-
+    <div className="relative banner-img">
+      <img
+        src="https://nexuscluster.blob.core.windows.net/server01/artha-venture-fund/undefined/0.8940111406662126.png-9Yvw6z3vyV3f8MxqBgWVa-1709983963"
+        alt="banner"
+        className="w-full filter-b6 banner-img object-cover"
+      />
+      <div className="absolute top-0 text-left left-0 flex items-center justify-start banner-img">
+        <div className="w-full container mx-auto">
+            <div className="w-50">
+              <p className="textwhite font-400 sm-text-justify mbpx1 fsize16 sm-fsize15">
+                Quality with Integnity
+              </p>
+              <h3 className="textwhite font-600 sm-font-400 mtpx9 sm-mtpx6 leading mbpx1 fsize40 sm-fsize20">
+                Krishi Engineering Works
+              </h3>
+              <p className="textwhite font-400 sm-text-justify mbpx1 fsize18 sm-fsize15">
+                We spot, invest, and nurture passionate founders obsessed with
+                solving the challenges of Indian consumers and businesses. We
+                are an energetic team of serial entrepreneurs knack of
+                choosing winners at their early stages.
+              </p>
+              <div className="flex items-center justify-start gap-10">
                 <NavLink to="/connect">
-                  <button className="border-0 cursor-pointer font-500 bgprimary textwhite rounded-5 ptpx12 pbpx12 sm-ptpx8 sm-pbpx8 sm-plpx20 sm-prpx20 plpx35 prpx35 mtpx20 fsize17 sm-fsize13">
+                  <button className="border-0 cursor-pointer font-500 textprimary rounded-5 ptpx12 pbpx12 sm-ptpx6 sm-pbpx6 sm-plpx20 sm-prpx20 plpx35 prpx35 mtpx20 fsize16 sm-fsize13 bgwhite">
                     Connect
+                  </button>
+                </NavLink>
+                <NavLink to="/about">
+                  <button className="cursor-pointer font-500 rounded-5 ptpx12 pbpx12 sm-ptpx6 sm-pbpx6 sm-plpx20 sm-prpx20 plpx35 prpx35 mtpx20 fsize16 sm-fsize13 whitebtn">
+                    About Us
                   </button>
                 </NavLink>
               </div>
             </div>
-          </div>
         </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="relative banner-img">
-          <img
-            src="https://html.creativegigstf.com/charles/images/home/slide-2.jpg?1709375558076"
-            alt="banner"
-            className="w-full banner-img object-cover"
-          />
-          <div className="absolute top-0 text-left left-0 flex items-center justify-start banner-img">
-            <div className="w-full container mx-auto">
-              <div className="w-50 md-w-70 sm-w-90">
-                <p className="textdark font-400 sm-text-justify mbpx1 fsize23 md-fsize20 sm-fsize15">
-                  The government of fortune
-                </p>
-                <h3 className="textprimary font-800 sm-font-400 mtpx9 sm-mtpx6 leading mbpx1 fsize55 md-fsize30 sm-fsize20">
-                  WE IMPROVE YOUR SALES EFFICIENCY
-                </h3>
-
-                <NavLink to="/connect">
-                  <button className="border-0 cursor-pointer font-500 bgprimary textwhite rounded-5 ptpx12 pbpx12 sm-ptpx8 sm-pbpx8 sm-plpx20 sm-prpx20 plpx35 prpx35 mtpx20 fsize17 sm-fsize13">
-                    Connect
-                  </button>
-                </NavLink>
-              </div>
-            </div>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="relative banner-img">
-          <img
-            src="https://html.creativegigstf.com/charles/images/home/slide-3.jpg?1709375570288"
-            alt="banner"
-            className="w-full banner-img object-cover"
-          />
-          <div className="absolute top-0 text-left left-0 flex items-center justify-start banner-img">
-            <div className="w-full container mx-auto">
-              <div className="w-50 md-w-70 sm-w-90">
-                <p className="textdark font-400 sm-text-justify mbpx1 fsize23 md-fsize20 sm-fsize15">
-                  The government of fortune
-                </p>
-                <h3 className="textprimary font-800 sm-font-400 mtpx9 sm-mtpx6 leading mbpx1 fsize55 md-fsize30 sm-fsize20">
-                  WE IMPROVE YOUR SALES EFFICIENCY
-                </h3>
-
-                <NavLink to="/connect">
-                  <button className="border-0 cursor-pointer font-500 bgprimary textwhite rounded-5 ptpx12 pbpx12 sm-ptpx8 sm-pbpx8 sm-plpx20 sm-prpx20 plpx35 prpx35 mtpx20 fsize17 sm-fsize13">
-                    Connect
-                  </button>
-                </NavLink>
-              </div>
-            </div>
-          </div>
-        </div>
-      </SwiperSlide>
-    </Swiper>
+      </div>
+    </div>
   );
 };
 

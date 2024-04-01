@@ -18,18 +18,18 @@ const Navbar = () => {
     },
     {
       icon: "settings",
-      name: "Services",
-      route: "service",
+      name: "Plans",
+      route: "plans",
+    },
+    {
+      icon: "folder",
+      name: "Blogs",
+      route: "blogs",
     },
     {
       icon: "grid",
       name: "Gallery",
       route: "gallery",
-    },
-    {
-      icon: "folder",
-      name: "Blog",
-      route: "blog",
     },
     {
       icon: "phone-call",
@@ -39,14 +39,14 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full ptpx10 pbpx30 bgwhite md-ptpx1 md-pbpx1 sm-ptpx1 sm-pbpx1 navbar">
+    <div className="w-full ptpx4 pbpx4 bgwhite sm-ptpx1 sm-pbpx1 navbar">
       {sidebarshow ? (
-        <div className="bg-glass fixed hidden h-100 md-block sm-block w-full z-99">
-          <div className="bgwhite w-90 md-w-40 h-100 absolute right-0 top-0">
+        <div className="bg-glass fixed hidden h-100 sm-block w-full z-99">
+          <div className="bgwhite w-90 h-100 absolute right-0 top-0">
             <div className="bgprimary p5">
               <div className="flex items-center justify-between gap-4 plpx10 prpx10">
                 <p className="fsize16 textwhite mtpx4 mbpx4 cursor-pointer font-500">
-                  Logo
+                  RS Developers
                 </p>
                 <FeatherIcon
                   icon="x"
@@ -59,7 +59,7 @@ const Navbar = () => {
             <div className="mtpx20">
               {NavMenu.map((e) => (
                 <>
-                  <div className="plpx20 prpx20 mbpx20">
+                  <div className="plpx20 prpx20 mbpx25">
                     <NavLink
                       to={e.route}
                       activeClass="active"
@@ -77,89 +77,38 @@ const Navbar = () => {
           </div>
         </div>
       ) : null}
-      <div className="container mx-auto">
-        <div className="relative flex justify-between items-center ">
-          <div className="">
+      <div className="flex justify-between items-center container mx-auto">
+        <div className="">
+          <NavLink to="/">
             <img src={logo} alt="logo" className="object-contain nav-logo" />
+          </NavLink>
+        </div>
+        <div className="flex justify-center gap-5 items-center sm-hidden">
+          {NavMenu.map((e) => (
+            <>
+              <NavLink
+                activeClass="active"
+                className="fsize17 font-500 mlpx16 mrpx16 activetext cursor-pointer"
+                to={e.route}
+              >
+              {e.name}
+              </NavLink>
+            </>
+          ))}
+        </div>
+        <div className="hidden sm-block">
+          <div className="bg-ec sidebar-icon rounded-5 justify-center items-center flex">
+            <FeatherIcon
+              icon="align-justify"
+              className="textgray"
+              onClick={() => setsidebarshow(true)}
+            />
           </div>
-          <div className="flex items-center md-hidden sm-hidden">
-            <div className="flex items-center">
-              <FeatherIcon icon="map-pin" size={25} className="textdark flex" />
-              <div className="mlpx15">
-                <h3 className="fsize15 font-500 mtpx1 mbpx1 textdark">
-                  Address:
-                </h3>
-                <p className="fsize12 mtpx1 mbpx1 textgray">
-                  Mumbai, Maharashtra
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center mlpx30">
-              <FeatherIcon icon="mail" size={25} className="textdark flex" />
-              <div className="mlpx15">
-                <h3 className="fsize15 font-500 mtpx1 mbpx1 textdark">
-                  Email:
-                </h3>
-                <p className="fsize12 mtpx1 mbpx1 textgray">abcd@gmail.com</p>
-              </div>
-            </div>
-            <div className="mlpx30">
-              <button className="border-primary plpx20 prpx20 ptpx6 pbpx6 bgwhite textprimary fsize15">
-                Get Quote
-              </button>
-            </div>
-          </div>
-          <div className="hidden md-block sm-block">
-            <div className="bg-fa sidebar-icon rounded-5 justify-center items-center flex">
-              <FeatherIcon
-                icon="align-justify"
-                className="textgray"
-                onClick={() => setsidebarshow(true)}
-              />
-            </div>
-          </div>
-          <div className="absolute md-hidden sm-hidden bottom-0 left-0 bgprimary z-20 minus-nav ptpx32 pbpx32 w-full">
-            <div className="flex items-center justify-between plpx20 prpx40">
-              <div className="flex items-center">
-                {NavMenu.map((e) => (
-                  <>
-                    <div className="flex items-center">
-                      <NavLink
-                        activeClass="active"
-                        className="fsize18 activetext mrpx20 mlpx20 cursor-pointer"
-                        to={e.route}
-                      >
-                        {e.name}
-                      </NavLink>
-                      <p className="textwhite mlpx8">/</p>
-                    </div>
-                  </>
-                ))}
-              </div>
-              <div className="flex items-center">
-                <FeatherIcon
-                  icon="facebook"
-                  size={17}
-                  className="textwhite mlpx12"
-                />
-                <FeatherIcon
-                  icon="instagram"
-                  size={17}
-                  className="textwhite mlpx12"
-                />
-                <FeatherIcon
-                  icon="linkedin"
-                  size={17}
-                  className="textwhite mlpx12"
-                />
-                <FeatherIcon
-                  icon="youtube"
-                  size={17}
-                  className="textwhite mlpx12"
-                />
-              </div>
-            </div>
-          </div>
+        </div>
+        <div className="flex sm-hidden">
+          <button className="border-0 cursor-pointer font-500 textwhite rounded-5 ptpx7 pbpx7 plpx24 prpx24 fsize15 bgprimary">
+            Enquity Now
+          </button>
         </div>
       </div>
     </div>

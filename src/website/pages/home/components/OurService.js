@@ -1,152 +1,141 @@
-import React from 'react'
+import React from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay } from "swiper";
+import "swiper/css";
+import "swiper/swiper.min.css";
 
 const OurService = () => {
+    SwiperCore.use([Autoplay]);
   return (
     <div className="ptpx60 pbpx60 md-ptpx30 md-pbpx30 sm-ptpx20 sm-pbpx20">
       <div className="container mx-auto">
-        <h4 className="fsize40 md-fsize30 sm-fsize20 mtpx1 mbpx1 uppercase text-center textdark font-900">
-          Our Services
-        </h4>
-        <hr className="ouservice-hr mtpx10" />
-        <p className="text-center mtpx17 fsize17 md-fsize16 sm-fsize14 textgray">
-          A tale of a fateful trip that started from this tropic port aboard
-          this tiny ship today stillers
-        </p>
-        <div className="grid-cols-3 md-grid-cols-2 sm-grid-cols-1 gap-12 mtpx40">
-          <div className="flex border-ec rounded-10 overflow-hidden m5">
-            <div className="w-40">
-              <img
-                src="https://html.creativegigstf.com/charles/images/home/3.jpg"
-                alt="service"
-                className="service1-img object-cover flex"
-              />
-            </div>
-            <div className="w-60 p7">
-              <h6 className="fsize20 md-fsize19 sm-fsize16 mtpx5 mbpx1 textprimary font-600">
-                Business Services
-              </h6>
-              <p className="mtpx3 fsize14 sm-fsize13 line-clamp2 textgray">
-                A tale of a fateful trip that started from this tropic port
-                aboard this tiny ship today stillers
-              </p>
-              <p className="mtpx3 fsize16 sm-fsize14 underline textprimary">
-                Read More
-              </p>
-            </div>
-          </div>
-          <div className="flex border-ec rounded-10 overflow-hidden m5">
-            <div className="w-40">
-              <img
-                src="https://html.creativegigstf.com/charles/images/home/3.jpg"
-                alt="service"
-                className="service1-img object-cover flex"
-              />
-            </div>
-            <div className="w-60 p7">
-              <h6 className="fsize20 md-fsize19 sm-fsize16 mtpx5 mbpx1 textprimary font-600">
-                Business Services
-              </h6>
-              <p className="mtpx3 fsize14 sm-fsize13 line-clamp2 textgray">
-                A tale of a fateful trip that started from this tropic port
-                aboard this tiny ship today stillers
-              </p>
-              <p className="mtpx3 fsize16 sm-fsize14 underline textprimary">
-                Read More
-              </p>
-            </div>
-          </div>
-          <div className="flex border-ec rounded-10 overflow-hidden m5">
-            <div className="w-40">
-              <img
-                src="https://html.creativegigstf.com/charles/images/home/3.jpg"
-                alt="service"
-                className="service1-img object-cover flex"
-              />
-            </div>
-            <div className="w-60 p7">
-              <h6 className="fsize20 md-fsize19 sm-fsize16 mtpx5 mbpx1 textprimary font-600">
-                Business Services
-              </h6>
-              <p className="mtpx3 fsize14 sm-fsize13 line-clamp2 textgray">
-                A tale of a fateful trip that started from this tropic port
-                aboard this tiny ship today stillers
-              </p>
-              <p className="mtpx3 fsize16 sm-fsize14 underline textprimary">
-                Read More
-              </p>
-            </div>
-          </div>
-          <div className="flex border-ec rounded-10 overflow-hidden m5">
-            <div className="w-40">
-              <img
-                src="https://html.creativegigstf.com/charles/images/home/3.jpg"
-                alt="service"
-                className="service1-img object-cover flex"
-              />
-            </div>
-            <div className="w-60 p7">
-              <h6 className="fsize20 md-fsize19 sm-fsize16 mtpx5 mbpx1 textprimary font-600">
-                Business Services
-              </h6>
-              <p className="mtpx3 fsize14 sm-fsize13 line-clamp2 textgray">
-                A tale of a fateful trip that started from this tropic port
-                aboard this tiny ship today stillers
-              </p>
-              <p className="mtpx3 fsize16 sm-fsize14 underline textprimary">
-                Read More
-              </p>
-            </div>
-          </div>
-          <div className="flex border-ec rounded-10 overflow-hidden m5">
-            <div className="w-40">
-              <img
-                src="https://html.creativegigstf.com/charles/images/home/3.jpg"
-                alt="service"
-                className="service1-img object-cover flex"
-              />
-            </div>
-            <div className="w-60 p7">
-              <h6 className="fsize20 md-fsize19 sm-fsize16 mtpx5 mbpx1 textprimary font-600">
-                Business Services
-              </h6>
-              <p className="mtpx3 fsize14 sm-fsize13 line-clamp2 textgray">
-                A tale of a fateful trip that started from this tropic port
-                aboard this tiny ship today stillers
-              </p>
-              <p className="mtpx3 fsize16 sm-fsize14 underline textprimary">
-                Read More
-              </p>
-            </div>
-          </div>
-          <div className="flex border-ec rounded-10 overflow-hidden m5">
-            <div className="w-40">
-              <img
-                src="https://html.creativegigstf.com/charles/images/home/3.jpg"
-                alt="service"
-                className="service1-img object-cover flex"
-              />
-            </div>
-            <div className="w-60 p7">
-              <h6 className="fsize20 md-fsize19 sm-fsize16 mtpx5 mbpx1 textprimary font-600">
-                Business Services
-              </h6>
-              <p className="mtpx3 fsize14 sm-fsize13 line-clamp2 textgray">
-                A tale of a fateful trip that started from this tropic port
-                aboard this tiny ship today stillers
-              </p>
-              <p className="mtpx3 fsize16 sm-fsize14 underline textprimary">
-                Read More
-              </p>
-            </div>
-          </div>
+        <div className="w-60 mx-auto">
+          <h4 className="fsize40 md-fsize30 sm-fsize20 mtpx1 mbpx1 uppercase text-center textdark font-900">
+            Our Services
+          </h4>
+          <p className="text-center mtpx17 fsize17 md-fsize16 sm-fsize14 textgray">
+            “Artha embodies the spirit of meaning which we bring to your
+            start-up. We provide our founders with all the resources required to
+            create companies, today, that will define how business is conducted
+            – tomorrow”
+          </p>
         </div>
-        <p className="text-center textdark fsize23 md-fsize20 sm-fsize14 mtpx50 md-mtpx40 sm-mtpx30">
-          You can also send us an email and we’ll get in touch shortly, or Call
-          us
-        </p>
-        <p className="text-center textprimary underline cursor-pointer fsize23 md-fsize20 sm-fsize14 mtpx9 sm-mtpx7">
-          info@support.com (or) +1 234 6780 900
-        </p>
+        <div className="mtpx22">
+          <Swiper
+            grabCursor={true}
+            className="mySwiper p10"
+            autoplay={{
+              delay: 1000,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              1536: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              1280: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              991: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              640: {
+                slidesPerView: 1,
+              },
+              425: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <div className="d-shadow text-center service-h flex items-center">
+                <div className="plpx10 prpx10">
+                  <img
+                    src="https://html.creativegigstf.com/charles/images/logo/p-1.png"
+                    alt="banner"
+                    className="partner-img object-contain"
+                  />{" "}
+                  <h4 className="fsize25 md-fsize23 sm-fsize18 mtpx5 mbpx1 textprimary">
+                    About us
+                  </h4>
+                  <p className="mtpx10 fsize16 sm-fsize14 md-fsize14 textgray">
+                    “Artha embodies the spirit of meaning which we bring to your
+                    start-up.
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="d-shadow text-center service-h flex items-center">
+                <div className="plpx10 prpx10">
+                  <img
+                    src="https://html.creativegigstf.com/charles/images/logo/p-1.png"
+                    alt="banner"
+                    className="partner-img object-contain"
+                  />{" "}
+                  <h4 className="fsize25 md-fsize23 sm-fsize18 mtpx5 mbpx1 textprimary">
+                    About us
+                  </h4>
+                  <p className="mtpx10 fsize16 sm-fsize14 md-fsize14 textgray">
+                    “Artha embodies the spirit of meaning which we bring to your
+                    start-up.
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="d-shadow text-center service-h flex items-center">
+                <div className="plpx10 prpx10">
+                  <img
+                    src="https://html.creativegigstf.com/charles/images/logo/p-1.png"
+                    alt="banner"
+                    className="partner-img object-contain"
+                  />{" "}
+                  <h4 className="fsize25 md-fsize23 sm-fsize18 mtpx5 mbpx1 textprimary">
+                    About us
+                  </h4>
+                  <p className="mtpx10 fsize16 sm-fsize14 md-fsize14 textgray">
+                    “Artha embodies the spirit of meaning which we bring to your
+                    start-up.
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="d-shadow text-center service-h flex items-center">
+                <div className="plpx10 prpx10">
+                  <img
+                    src="https://html.creativegigstf.com/charles/images/logo/p-1.png"
+                    alt="banner"
+                    className="partner-img object-contain"
+                  />{" "}
+                  <h4 className="fsize25 md-fsize23 sm-fsize18 mtpx5 mbpx1 textprimary">
+                    About us
+                  </h4>
+                  <p className="mtpx10 fsize16 sm-fsize14 md-fsize14 textgray">
+                    “Artha embodies the spirit of meaning which we bring to your
+                    start-up.
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </div>
   );
