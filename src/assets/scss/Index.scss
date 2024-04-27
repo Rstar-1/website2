@@ -1,12 +1,7 @@
-body {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
 /* ======================= Start-Color ======================= */
-$primary: #684DF4 !important;
+$primary: #684df4 !important;
 $secondary: #3e00a7 !important;
-$tertiary: #080E1C !important;
+$tertiary: #080e1c !important;
 $forth: #121018 !important;
 $success: #4bb543 !important;
 $warning: #ff5722 !important;
@@ -114,9 +109,6 @@ $gray: gray !important;
 }
 .liner-color3 {
   background: linear-gradient(45deg, #0045c7, #ff2c7d) !important;
-}
-.bg-second {
-  background: #151f3b !important;
 }
 /* ======================= End-Bg-Color ======================= */
 
@@ -349,10 +341,6 @@ p {
 }
 .b-shadow {
   box-shadow: 0px 9px 50px #1211271f !important;
-}
-.drop-w {
-  width: 120px !important;
-  border-radius: 6px !important;
 }
 .h-banner {
   width: 100% !important;
@@ -1521,7 +1509,7 @@ tr:nth-child(even):hover {
     height: 38px !important;
   }
 }
-.opacity-8{
+.opacity-8 {
   opacity: 0.1 !important;
 }
 //Section3
