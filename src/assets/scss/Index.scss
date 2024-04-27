@@ -736,6 +736,65 @@ tr:nth-child(even):hover {
 }
 // Section 4
 
+// Section 5
+.herosection5-img {
+  width: 100% !important;
+  height: 450px !important;
+  @media (min-width: 641px) and (max-width: 768px) {
+    height: 400px !important;
+  }
+  @media (max-width: 640px) {
+    height: 320px !important;
+  }
+}
+.herosecondsection5-img {
+  width: 100% !important;
+  height: 150px !important;
+  @media (min-width: 641px) and (max-width: 768px) {
+    height: 120px !important;
+  }
+  @media (max-width: 640px) {
+    height: 100px !important;
+  }
+}
+.herothirdsection5-img {
+  height: 200px !important;
+  @media (min-width: 641px) and (max-width: 768px) {
+    height: 150px !important;
+  }
+  @media (max-width: 640px) {
+    height: 120px !important;
+  }
+}
+.heroforthsection5-img {
+  height: 200px !important;
+  @media (min-width: 641px) and (max-width: 768px) {
+    height: 150px !important;
+  }
+  @media (max-width: 640px) {
+    height: 120px !important;
+  }
+}
+.herofifthsection5-img {
+  height: 200px !important;
+  @media (min-width: 641px) and (max-width: 768px) {
+    height: 150px !important;
+  }
+  @media (max-width: 640px) {
+    height: 120px !important;
+  }
+}
+.herosixthsection5-img {
+  height: 120px !important;
+  @media (min-width: 641px) and (max-width: 768px) {
+    height: 100px !important;
+  }
+  @media (max-width: 640px) {
+    height: 120px !important;
+  }
+}
+// Section 5
+
 .cardsection-h {
   height: 450px !important;
   @media (max-width: 640px) {
