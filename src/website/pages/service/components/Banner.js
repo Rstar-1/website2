@@ -4,15 +4,15 @@ const Banner = () => {
   return (
     <div className="relative h-banner">
       <img
-        src="https://html.creativegigstf.com/charles/images/home/inner-banner.jpg"
+        src="https://nexuscluster.blob.core.windows.net/server01/artha-venture-fund/undefined/0.6575744868268558.jpg-0VVAmED992CXSEhVNA2dt-1710009355"
         alt="banner"
-        className="w-full h-banner filter-b4 object-cover"
+        className="w-full h-banner filter-b6 object-cover"
       />
       <div className="absolute top-0 text-center left-0 flex items-center justify-start h-banner">
         <div className="w-full container mx-auto">
-            <h3 className="textwhite font-800 sm-font-400 mtpx9 sm-mtpx6 leading mbpx1 fsize45 md-fsize35 sm-fsize24">
-              Services
-            </h3>
+          <h3 className="textwhite font-800 sm-font-400 mtpx9 sm-mtpx6 leading mbpx1 fsize45 md-fsize35 sm-fsize24">
+            Our Service
+          </h3>
         </div>
       </div>
     </div>
