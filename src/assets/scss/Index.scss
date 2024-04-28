@@ -795,6 +795,19 @@ tr:nth-child(even):hover {
 }
 // Section 5
 
+// Section 1
+.hersection6-img {
+  width: 100% !important;
+  height: 500px !important;
+  @media (min-width: 641px) and (max-width: 768px) {
+    height: 390px !important;
+  }
+  @media (max-width: 640px) {
+    height: 320px !important;
+  }
+}
+// Section 1
+
 .cardsection-h {
   height: 450px !important;
   @media (max-width: 640px) {
@@ -1458,6 +1471,17 @@ tr:nth-child(even):hover {
 //Section3
 
 /* ======================= End-Connect ======================= */
+
+/* ======================= Start-Subscription ======================= */
+
+// Section1
+.Subscription-check {
+  padding: 2px;
+  border-radius: 50% !important;
+}
+// Section1
+
+/* ======================= End-Subscription ======================= */
 
 /* ======================= Start-Service ======================= */
 
